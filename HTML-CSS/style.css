@@ -1,0 +1,74 @@
+body {
+  /* background-color: transparent; */
+  /* color: white; */
+}
+/* 
+.background {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/071/057/437/non_2x/nature-background-nature-wallpaper-an-avenue-lined-with-numerous-blooming-cherry-blossom-trees-under-a-bright-sky-free-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+} */
+
+.header {
+  background-color: #f2f2f2;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+@media (max-width: 440px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 200px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+.navigation {
+  padding: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+}
+
+.nav-list li a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+  /* font-weight: bold; */
+  /* font-size: 18px; */
+  /* font-family: Arial, sans-serif; */
+}
+
+.notification {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+}

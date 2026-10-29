@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://web.dev/static/articles/building/an-adaptive-favicon/image/example-dark-theme-favico-6a6f6f67bc3e7.png"
+    />
+    <link rel="stylesheet" href="./form.css" />
+    <style>
+      #title {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title" style="color: blue">HTML FORM</h1>
+    <form action="" method="" class="form-container">
+      <div>
+        <label for="fname" class="form-label">First Name:</label>
+        <input id="fname" type="text" name="fname" class="form-input" required />
+      </div>
+
+      <div>
+        <label for="lname" class="form-label">Last Name:</label>
+        <input id="lname" type="text" name="lname" class="form-input" required />
+      </div>
+
+      <div>
+        <label for="email" class="form-label">Email:</label>
+        <input id="email" type="email" name="email" class="form-input" required />
+      </div>
+
+      <div>
+        <label for="phone" class="form-label">Phone:</label>
+        <input id="phone" type="tel" name="phone" class="form-input" required />
+      </div>
+
+      <div>
+        <label for="dob" class="form-label">DOB:</label>
+        <input id="dob" type="date" name="dob" class="form-input" />
+      </div>
+
+      <div>
+        <label for="time" class="form-label">Time:</label>
+        <input id="time" type="time" name="time" class="form-input" />
+      </div>
+
+      <div>
+        <label for="color" class="form-label">Color:</label>
+        <input id="color" type="color" name="color" required />
+      </div>
+
+      <div>
+        <label class="form-label">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+      </div>
+
+      <div>
+        <label for="country" class="form-label">Country:</label>
+        <select id="country" name="country" required>
+          <option value="" selected disabled>Select a country</option>
+          <option value="india">India</option>
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option>
+          <option value="uk">United Kingdom</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message" class="form-label">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" />
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
