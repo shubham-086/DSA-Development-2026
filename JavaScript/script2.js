@@ -102,5 +102,39 @@ function sum(a, b, ...c) {
   }
   return a + b + sum;
 }
+// console.log(sum(10, 20, 30, 5));
 
-console.log(sum(10, 20, 30, 5));
+const add = (a, b) => a + b;
+const sqaure = (a) => a * a;
+
+const student = () => ({
+  name: "Shubham",
+  age: 20,
+});
+
+// console.log(add(10, 20));
+// console.log(student());
+
+const person = {
+  name: "Amit",
+  age: 25,
+  fun: function fun() {
+    console.log(this);
+  },
+  arrow_fun: () => {
+    console.log(this);
+  },
+};
+
+person.fun();
+person.arrow_fun();
+
+// write an arrow function to calculate the area of the circle
+
+const area = (r) => Math.PI * r * r;
+
+console.log(area(5));
+
+const greatest = (...nums) => Math.max(...nums);
+
+console.log(greatest(1, 6, 3, 9, 12, 7, 4));
