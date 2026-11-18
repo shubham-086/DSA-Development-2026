@@ -3,12 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DOM Manipulation Demo</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>Hello World</h1>
-    <!-- <script src="callbacks.js"></script> -->
-    <!-- <script src="methods.js"></script> -->
-    <script src="asynchronous.js"></script>
+    <div class="container">
+      <h1>DOM Manipulation Demo</h1>
+
+      <div class="box border-xl bg-blue" id="myBox">
+        <h2 id="heading">Hello Students!</h2>
+        <p id="message">Welcome to <span style="display: none">JavaScript</span> DOM.</p>
+      </div>
+
+      <!-- Change Content -->
+      <button onclick="changeText()">Change Text</button>
+
+      <!-- Change Style -->
+      <button onclick="changeColor()">Change Color</button>
+
+      <!-- Add/Remove Class -->
+      <button onclick="toggleClass()">Toggle Highlight</button>
+
+      <!-- Input Demo -->
+      <div>
+        <input type="text" id="username" placeholder="Enter your name" />
+        <button onclick="showName()">Submit</button>
+        <h3 id="output"></h3>
+      </div>
+
+      <!-- Create Element -->
+      <h3>My To-Do List</h3>
+
+      <input type="text" id="taskInput" placeholder="Enter a task" />
+
+      <button onclick="addTask()">Add Task</button>
+
+      <ul id="taskList"></ul>
+    </div>
+    <script src="dom.js"></script>
   </body>
 </html>
