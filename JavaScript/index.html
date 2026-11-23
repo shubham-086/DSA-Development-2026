@@ -17,13 +17,13 @@
       </div>
 
       <!-- Change Content -->
-      <button onclick="changeText()">Change Text</button>
+      <button id="changeTextBtn" onclick="changeText()">Change Text</button>
 
       <!-- Change Style -->
-      <button onclick="changeColor()">Change Color</button>
+      <button onmousewheel="changeColor()">Change Color</button>
 
       <!-- Add/Remove Class -->
-      <button onclick="toggleClass()">Toggle Highlight</button>
+      <button onmouseup="toggleClass()">Toggle Highlight</button>
 
       <!-- Input Demo -->
       <div>
@@ -42,5 +42,13 @@
       <ul id="taskList"></ul>
     </div>
     <script src="dom.js"></script>
+    <script src="events.js"></script>
+    <!-- <script>
+      let btn = document.getElementById("changeTextBtn");
+      btn.onclick = function () {
+        let p = document.getElementById("message");
+        p.innerText = "Internal JavaScript: Welcome to Amigo India";
+      };
+    </script> -->
   </body>
 </html>

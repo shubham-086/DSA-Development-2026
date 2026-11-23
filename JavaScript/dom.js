@@ -38,9 +38,14 @@ box.classList.remove(item);
 box.classList.add("shadow");
 // console.log(box.classList);
 
-function changeText() {
-  p.innerText = "Amigo India";
-}
+// function changeText() {
+//   p.innerText = "External JavaScript: Amigo India";
+// }
+// let changeTextBtn = document.getElementById("changeTextBtn");
+// changeTextBtn.onclick = function () {
+//   let p = document.getElementById("message");
+//   p.innerText = "External JavaScript: Welcome to Amigo India";
+// };
 
 function changeColor() {
   let h2 = document.getElementById("heading");
@@ -57,3 +62,49 @@ function showName() {
   let output = document.getElementById("output");
   output.innerText = input.value;
 }
+
+function addTask() {
+  // select input
+  let taskInput = document.getElementById("taskInput");
+  // select list
+  let taskList = document.getElementById("taskList");
+
+  // create list item
+  let li = document.createElement("li");
+  // update item text
+  li.innerText = taskInput.value;
+  li.style.listStyle = "none";
+  li.style.textAlign = "left";
+
+  // insert item inside list
+  taskList.append(li);
+
+  // Clear input
+  taskInput.value = "";
+}
+
+// append, appendChild, prepend, before, after, insertBefore
+let myBox = document.getElementById("myBox");
+
+function createNode() {
+  let h2 = document.createElement("h2");
+  h2.innerText = "New Element";
+
+  // myBox.append(h2);
+  // myBox.prepend(h2);
+  // myBox.before(h2);
+  myBox.after(h2);
+}
+
+createNode();
+
+let input = document.getElementById("username");
+let val = input.getAttribute("placeholder");
+console.log(val);
+input.setAttribute("placeholder", "Enter username");
+
+// Inline JS < Internal JS < External JS
+
+// myBox.onmouseover = () => {
+//   myBox.style.backgroundColor = "green";
+// };

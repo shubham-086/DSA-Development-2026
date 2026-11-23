@@ -42,10 +42,16 @@ input {
   margin: 10px;
 }
 
-li {
-  margin: 8px;
-}
-
 .text-red {
   color: red;
+}
+
+.jump {
+  transform: translateY(-20px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.double-jump {
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-in-out;
 }
